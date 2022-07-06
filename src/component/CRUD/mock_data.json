@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "fullName": "Rahul Singh",
+      "address": "netprophets",
+      "phoneNumber": "7702938391",
+      "email": "rahul@gmail.com"
+    },
+    {
+        "id": 1,
+        "fullName": "Rahul Singh",
+        "address": "netprophets",
+        "phoneNumber": "7702938391",
+        "email": "rahul@gmail.com"
+    },
+    {
+        "id": 1,
+        "fullName": "Rahul Singh",
+        "address": "netprophets",
+        "phoneNumber": "7702938391",
+        "email": "rahul@gmail.com"
+    }
+]

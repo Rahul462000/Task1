@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import Crud from './component/CRUD/crud'
+import Redux from './component/Reduxlogin/redux'
+import Todo from './component/Reduxlogin/Todo'
+import { selectUser } from './Feature/Slice'
+import { useSelector } from 'react-redux/es/hooks/useSelector'
+// import Todo from './component/Todoreact/Todo'
+// import Temp from "./component/weather/Temp"
 
-function App() {
+const App = () => {
+  const user = useSelector(selectUser)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    {/* <Temp /> */}
+    {/* <Crud /> */}
+    {/* <Todo /> */}
+    {/* <Redux /> */}
+    {user ? <Todo /> : <Redux />}
+    </>
+  )
 }
 
-export default App;
+export default App
